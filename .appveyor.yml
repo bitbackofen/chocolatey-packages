@@ -1,46 +1,29 @@
-# AU template: https://github.com/majkinetor/au-packages-template
-
 version: '{build}'
 max_jobs: 1
 image: WMF 5
-# History plugin requires complete log
-#clone_depth: 5
 branches:
   only:
   - master
-#build:
-#  verbosity: minimal
 
 environment:
-  # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
   au_version:
   au_push: true
-  # Force test: use 1 to test all, or N to split testing into N groups
   au_test_groups: 1
 
-  # Github token to commit pushed packages to repository
   github_user_repo: Shywim/chocolatey-packages
   github_api_key:
     secure: lnJ1oAR4Kby9jIDHUu1tSpEuwckLC+6wZJeCgohoInqNTjNm4xOq4xPiWNmdzrkQ
 
-
-  # Mail credentials - for error notifications
-  mail_user:
-    secure: XY0K80b0eeZ24eW4d43IrBZEPop71Bk6Dry2rTpjNXU=
+  mail_user: harle.matthieu@gmail.com
   mail_pass:
     secure: /P17jJ0uSyTP1UOGcAkI7A==
   mail_server: smtp.gmail.com
   mail_port: 587
   mail_enablessl: true
 
-  # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
-  # Optional, leave empty to create anonymous gist
-  gist_id: 3cc3482981711416d156d8963af501e5
-
-  # Force test: gist id for test results
+  gist_id: 5c485c72248516c4437d4f6821206fb3
   gist_id_test: 45d3116b8ee814d02a399a369d439364
 
-  # Chocolatey API key - to push updated packages
   api_key:
     secure: XdK3FphGNR+i0KIK6fHmYc3YnDkr6nO0KIJUWyORZxM5Xnp1fP8sDfD6w7AuHX+X
 
@@ -102,6 +85,3 @@ notifications:
   on_build_success: false
   on_build_failure: true
   on_build_status_changed: true
-
-#on_finish:
-#- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
