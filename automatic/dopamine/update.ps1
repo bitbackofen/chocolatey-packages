@@ -15,7 +15,7 @@ function global:au_GetLatest {
 
   $re = "Dopamine ([1-9][0-9.,]*[0-9]).msi"
   $url = $download_page.links | Where-Object href -Match $re | Select-Object -Last 1 -expand href
-  $url.Trim('./')
+  $url = $url.Trim('.')
 
   $version_re = "([1-9][0-9.,]*[0-9])"
   $version = $url | Select-String -Pattern $version_re | ForEach-Object { $_.Matches } | ForEach-Object { $_.Value } 
