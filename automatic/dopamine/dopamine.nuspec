@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>dopamine</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>1.3.0.927</version>
+    <!--PackageSourceUrl - Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed-->
+    <!--<packageSourceUrl>http://github.com/Shywim/chocolatey-dopamine</packageSourceUrl>-->
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>Shywim</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>Dopamine (Install)</title>
+    <authors>digimezzo</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>http://www.digimezzo.com/software/dopamine</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/digimezzo/Dopamine/master/Dopamine.png</iconUrl>
+    <!-- <copyright>Year Software Vendor</copyright> -->
+    <!-- If there is a license Url available, it is is required for the community feed -->
+    <licenseUrl>https://github.com/digimezzo/Dopamine/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/digimezzo/Dopamine</projectSourceUrl>
+    <docsUrl>http://www.digimezzo.com/software/dopamine-f-a-q</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <bugTrackerUrl>https://github.com/digimezzo/Dopamine/issues</bugTrackerUrl>
+    <tags>dopamine music-player</tags>
+    <summary>Audio player which tries to make organizing and listening to music as simple and pretty as possible.</summary>
+    <description>Dopamine is an audio player which tries to make organizing and listening to music as simple and pretty as possible. It is written in C# and is powered by the [CSCore sound library](https://github.com/filoe/cscore).
+
+More information and downloads are available at [http://www.digimezzo.com](http://www.digimezzo.com)</description>
+    <releaseNotes>Disclaimer:
+
+Playlist support was rewritten from scratch. Your existing playlists will not be migrated.
+Save your playlists to files manually before upgrading to this version. Import your saved
+playlists after upgrading to this version.
+
+- [Added] Added a button to export album and song covers to files
+- [Added] Added an option to switch between 4 styles of spectrum analyzers
+- [Added] Smoother list animations
+- [Added] Added extra album sorting option "By date created"
+- [Added] Added optional play count, skip count and date last played column to the songs screen
+- [Added] Added a context menu option to add the playing song to a playlist
+- [Added] Left and right arrow keys allow jumping 5 or 15 seconds backward or forward (Information > help for hotkeys)
+- [Added] Added an option to follow the album cover color
+- [Added] Added support for local lyrics files (LRC)
+- [Added] Added audio device selection
+- [Added] Changes to the collection folders are now detected automatically
+- [Added] Changes to the Music\Dopamine\Playlists folder are now detected automatically
+- [Added] Added NeteaseLyrics support
+- [Added] Added XiamiLyrics support
+- [Added] Double clicking a playlist queues and plays the songs of that playlist
+- [Added] The keyboard space bar now toggles play and pause
+- [Changed] Lyrics are not downloaded anymore when the lyrics screen is not visible
+- [Changed] When using "Loop one", pressing Previous or Next now skips to the previous or next song.
+- [Changed] Playlists support has been rewritten: playlists are now saved to files automatically.
+- [Changed] The 'Cloud' screen was renamed to 'Frequent' and the layout was changed
+- [Changed] The song title on playback info panes now scales to the available width
+- [Changed] Updated the Swedish translation
+- [Changed] Updated the Spanish translation
+- [Changed] Updated the French translation
+- [Changed] Updated the Turkish translation
+- [Changed] Updated the Bulgarian translation
+- [Changed] Updated the Greek translation
+- [Changed] Updated the Polish translation
+- [Changed] Updated the German translation
+- [Changed] Updated the Russian translation
+- [Fixed] Automatic install or download button for updates is confusing for some users
+- [Fixed] Improved sizing of time indicator on the main window
+- [Fixed] A potential crash when trying to figure out the Windows version at startup.
+- [Fixed] Blurry context menu, notification window and tooltips at desktop scaling higher as 100%
+- [Fixed] Timestamped lyrics for songs longer than 1 hour don't work
+- [Fixed] Audio files which reside on a NAS cannot be played from playlists
+- [Fixed] Dopamine process remains active in Task Manager after a crash
+- [Fixed] Tray controls are positioned outside of the screen when using desktop scaling > 100%
+- [Fixed] Fixed an occasional crash which happened when automatically scrolling to the playing song
+- [Fixed] Mini player windows are buggy in Windows 10 tablet mode
+- [Fixed] A possible startup crash caused by the tray icon
+- [Fixed] A conflict with the search box when changing the volume by pressing - or +
+- [Fixed] Tray controls don't respect the position of the Windows Taskbar.
+- [Fixed] Added optional 'Remove from disk' option to the song context menu
+- [Fixed] Date in the Song Information window is not localized
+- [Fixed] WASAPI Exclusive mode plays high pitched sound
+- [Fixed] Play next doesn't work correctly when shuffle is enabled
+
+</releaseNotes>
+    <!-- =============================== -->      
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+      <dependency id="chocolatey-uninstall.extension" />
+    </dependencies>-->
+    <!-- chocolatey-uninstall.extension - If supporting 0.9.9.x (or below) and including a chocolateyUninstall.ps1 file to uninstall an EXE/MSI, you probably want to include chocolatey-uninstall.extension as a dependency. Please verify whether you are using a helper function from that package. -->
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>

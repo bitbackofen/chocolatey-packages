@@ -1,0 +1,24 @@
+import-module au
+
+$releases = 'http://www.digimezzo.com/content/software/dopamine/releases'
+
+function global:au_SearchReplace {
+  @{
+    'tools\chocolateyInstall.ps1' = @{
+      "(^[$]url\s*=\s*('.*')" = "`$1'$($Latest.URL)'"
+    }
+  }
+}
+
+function global:au_GetLatest {
+  $download_page = Invoke-WebRequest -Uri $releases
+
+  $re = "Dopamine ([1-9][0-9.,]*).msi"
+  $url = $download_page.links | Where-Object href -Match $re | Select-Object -Last 1 -expand href
+
+  $version_re = "([1-9][0-9.,]*)"
+  $version = $url[0] | Select-String -Pattern $version_re | ForEach-Object { $_.Matches } | ForEach-Object { $_.Value } 
+
+  $Latest = @{ URL = $url; Version = $version }
+  return $Latest
+}
