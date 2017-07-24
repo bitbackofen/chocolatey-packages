@@ -19,7 +19,7 @@ function global:au_GetLatest {
 
   $version_re = "([1-9][0-9.,]*[0-9])"
   $version = $url | Select-String -Pattern $version_re | ForEach-Object { $_.Matches } | ForEach-Object { $_.Value } 
-  $url = $releases + '/' + $url
+  $url = $releases + $url
 
   $Latest = @{ URL = $url; Version = $version }
   return $Latest
