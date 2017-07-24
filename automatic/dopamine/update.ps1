@@ -22,3 +22,5 @@ function global:au_GetLatest {
   $Latest = @{ URL = $url; Version = $version }
   return $Latest
 }
+
+update
