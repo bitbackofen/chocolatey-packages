@@ -21,14 +21,14 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: {github_user}/{repository}
   github_api_key:
-    secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: lnJ1oAR4Kby9jIDHUu1tSpEuwckLC+6wZJeCgohoInqNTjNm4xOq4xPiWNmdzrkQ
 
 
   # Mail credentials - for error notifications
   mail_user:
-    secure: YOUR_EMAIL_ACCOUNT_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: XY0K80b0eeZ24eW4d43IrBZEPop71Bk6Dry2rTpjNXU=
   mail_pass:
-    secure: YOUR_EMAIL_PASSWORD_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: /P17jJ0uSyTP1UOGcAkI7A==
   mail_server: smtp.gmail.com
   mail_port: 587
   mail_enablessl: true
@@ -42,11 +42,11 @@ environment:
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING # https://ci.appveyor.com/tools/encrypt
+    secure: XdK3FphGNR+i0KIK6fHmYc3YnDkr6nO0KIJUWyORZxM5Xnp1fP8sDfD6w7AuHX+X
 
 init:
-- git config --global user.email "chocolatey@realdimensions.net"
-- git config --global user.name "Chocolatey"
+- git config --global user.email "harle.matthieu@gmail.com"
+- git config --global user.name "Matthieu Harlé"
 - git config --global core.safecrlf false
 
 install:
