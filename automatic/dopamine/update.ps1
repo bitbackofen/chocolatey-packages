@@ -13,11 +13,11 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases
 
-  $re = "Dopamine ([1-9][0-9.,]*).msi"
+  $re = "Dopamine ([1-9][0-9.,]*[0-9]).msi"
   $url = $download_page.links | Where-Object href -Match $re | Select-Object -Last 1 -expand href
   $url.Trim('./')
 
-  $version_re = "([1-9][0-9.,]*)"
+  $version_re = "([1-9][0-9.,]*[0-9])"
   $version = $url | Select-String -Pattern $version_re | ForEach-Object { $_.Matches } | ForEach-Object { $_.Value } 
   $url = $releases + '/' + $url
 
