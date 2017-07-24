@@ -21,7 +21,7 @@ function global:au_GetLatest {
   $version = $url | Select-String -Pattern $version_re | ForEach-Object { $_.Matches } | ForEach-Object { $_.Value } 
   $url = $releases + $url
 
-  $Latest = @{ URL = $url; Version = $version }
+  $Latest = @{ URL = [uri]::EscapeUriString($url); Version = $version }
   return $Latest
 }
 
