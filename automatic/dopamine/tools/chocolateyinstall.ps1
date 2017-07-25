@@ -4,6 +4,7 @@
 $packageName= 'dopamine'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url = 'http://www.digimezzo.com/content/software/dopamine/releases/Dopamine 1.3.0.927.msi'
+$checksum = '4F0232E5113EBC07D9AB6F4E2D64019DE8882E4EC20E708C37A3178F9BBA1B32'
 
 $packageArgs = @{
   packageName   = $packageName
@@ -15,7 +16,7 @@ $packageArgs = @{
 
   softwareName  = 'dopamine*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
 
-  checksum      = ''
+  checksum      = $checksum
   checksumType  = 'sha256' #default is md5, can also be sha1, sha256 or sha512
   #checksum64    = ''
   #checksumType64= 'sha256'
