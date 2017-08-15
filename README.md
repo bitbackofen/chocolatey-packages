@@ -1,7 +1,7 @@
 # Chocolatey Packages I am maintaining
 
-[![](https://ci.appveyor.com/api/projects/status/github/Shywim/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/Shywim/chocolatey-packages)
-[![Update status](https://img.shields.io/badge/packages-status-blue.svg)](https://gist.github.com/Shywim/5c485c72248516c4437d4f6821206fb3)
+[![AppVeyor](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg?style=flat-square)](https://ci.appveyor.com/project/Shywim/chocolatey-packages)
+[![Update status](https://img.shields.io/badge/packages-status-blue.svg?style=flat-square)](https://gist.github.com/Shywim/5c485c72248516c4437d4f6821206fb3)
 
 <table>
   <tbody>
