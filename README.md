@@ -1,6 +1,6 @@
 # Chocolatey Packages I am maintaining
 
-[![AppVeyor](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg?style=flat-square)](https://ci.appveyor.com/project/Shywim/chocolatey-packages)
+[![AppVeyor](https://img.shields.io/appveyor/ci/Shywim/chocolatey-packages.svg?style=flat-square)](https://ci.appveyor.com/project/Shywim/chocolatey-packages)
 [![Update status](https://img.shields.io/badge/packages-status-blue.svg?style=flat-square)](https://gist.github.com/Shywim/5c485c72248516c4437d4f6821206fb3)
 
 <table>
