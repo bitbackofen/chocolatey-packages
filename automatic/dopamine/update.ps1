@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'http://www.digimezzo.com/content/software/dopamine/releases'
+$releases = 'http://www.digimezzo.com/content/software/dopamine'
 
 function global:au_SearchReplace {
   @{
