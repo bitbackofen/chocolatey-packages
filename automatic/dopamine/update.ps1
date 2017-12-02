@@ -5,8 +5,8 @@ $releases = 'http://www.digimezzo.com/content/software/dopamine'
 function global:au_SearchReplace {
   @{
     'tools\chocolateyInstall.ps1' = @{
-      "(^[$]url\s*=\s*('.*')" = "`$1'$($Latest.URL)'"
-      "(^[$]checksum\s*=\s*('.*')" = "`$1'$($Latest.Checksum)'"
+      "(^[$]url\s*=\s*)('.*')" = "`$1'$($Latest.URL)'"
+      "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum)'"
     }
   }
 }
