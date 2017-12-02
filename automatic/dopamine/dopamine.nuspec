@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dopamine</id>
-    <version>1.3.0.927</version>
+    <version>1.5.4.0</version>
     <packageSourceUrl>https://github.com/Shywim/chocolatey-packages/tree/master/automatic/dopamine</packageSourceUrl>
     <owners>Shywim</owners>
 
@@ -33,7 +33,7 @@ playlists after upgrading to this version.
 - [Added] Added extra album sorting option "By date created"
 - [Added] Added optional play count, skip count and date last played column to the songs screen
 - [Added] Added a context menu option to add the playing song to a playlist
-- [Added] Left and right arrow keys allow jumping 5 or 15 seconds backward or forward (Information > help for hotkeys)
+- [Added] Left and right arrow keys allow jumping 5 or 15 seconds backward or forward (Information &gt; help for hotkeys)
 - [Added] Added an option to follow the album cover color
 - [Added] Added support for local lyrics files (LRC)
 - [Added] Added audio device selection
@@ -64,7 +64,7 @@ playlists after upgrading to this version.
 - [Fixed] Timestamped lyrics for songs longer than 1 hour don't work
 - [Fixed] Audio files which reside on a NAS cannot be played from playlists
 - [Fixed] Dopamine process remains active in Task Manager after a crash
-- [Fixed] Tray controls are positioned outside of the screen when using desktop scaling > 100%
+- [Fixed] Tray controls are positioned outside of the screen when using desktop scaling &gt; 100%
 - [Fixed] Fixed an occasional crash which happened when automatically scrolling to the playing song
 - [Fixed] Mini player windows are buggy in Windows 10 tablet mode
 - [Fixed] A possible startup crash caused by the tray icon
