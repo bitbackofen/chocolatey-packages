@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dopamine</id>
-    <version>1.5.4.0</version>
+    <version>1.5.14</version>
     <packageSourceUrl>https://github.com/Shywim/chocolatey-packages/tree/master/automatic/dopamine</packageSourceUrl>
     <owners>Shywim</owners>
 
@@ -21,59 +21,20 @@
     <description>Dopamine is an audio player which tries to make organizing and listening to music as simple and pretty as possible. It is written in C# and is powered by the [CSCore sound library](https://github.com/filoe/cscore).
 
 More information and downloads are available at [http://www.digimezzo.com](http://www.digimezzo.com)</description>
-    <releaseNotes>Disclaimer:
-
-Playlist support was rewritten from scratch. Your existing playlists will not be migrated.
-Save your playlists to files manually before upgrading to this version. Import your saved
-playlists after upgrading to this version.
-
-- [Added] Added a button to export album and song covers to files
-- [Added] Added an option to switch between 4 styles of spectrum analyzers
-- [Added] Smoother list animations
-- [Added] Added extra album sorting option "By date created"
-- [Added] Added optional play count, skip count and date last played column to the songs screen
-- [Added] Added a context menu option to add the playing song to a playlist
-- [Added] Left and right arrow keys allow jumping 5 or 15 seconds backward or forward (Information &gt; help for hotkeys)
-- [Added] Added an option to follow the album cover color
-- [Added] Added support for local lyrics files (LRC)
-- [Added] Added audio device selection
-- [Added] Changes to the collection folders are now detected automatically
-- [Added] Changes to the Music\Dopamine\Playlists folder are now detected automatically
-- [Added] Added NeteaseLyrics support
-- [Added] Added XiamiLyrics support
-- [Added] Double clicking a playlist queues and plays the songs of that playlist
-- [Added] The keyboard space bar now toggles play and pause
-- [Changed] Lyrics are not downloaded anymore when the lyrics screen is not visible
-- [Changed] When using "Loop one", pressing Previous or Next now skips to the previous or next song.
-- [Changed] Playlists support has been rewritten: playlists are now saved to files automatically.
-- [Changed] The 'Cloud' screen was renamed to 'Frequent' and the layout was changed
-- [Changed] The song title on playback info panes now scales to the available width
-- [Changed] Updated the Swedish translation
-- [Changed] Updated the Spanish translation
-- [Changed] Updated the French translation
-- [Changed] Updated the Turkish translation
-- [Changed] Updated the Bulgarian translation
-- [Changed] Updated the Greek translation
-- [Changed] Updated the Polish translation
-- [Changed] Updated the German translation
-- [Changed] Updated the Russian translation
-- [Fixed] Automatic install or download button for updates is confusing for some users
-- [Fixed] Improved sizing of time indicator on the main window
-- [Fixed] A potential crash when trying to figure out the Windows version at startup.
-- [Fixed] Blurry context menu, notification window and tooltips at desktop scaling higher as 100%
-- [Fixed] Timestamped lyrics for songs longer than 1 hour don't work
-- [Fixed] Audio files which reside on a NAS cannot be played from playlists
-- [Fixed] Dopamine process remains active in Task Manager after a crash
-- [Fixed] Tray controls are positioned outside of the screen when using desktop scaling &gt; 100%
-- [Fixed] Fixed an occasional crash which happened when automatically scrolling to the playing song
-- [Fixed] Mini player windows are buggy in Windows 10 tablet mode
-- [Fixed] A possible startup crash caused by the tray icon
-- [Fixed] A conflict with the search box when changing the volume by pressing - or +
-- [Fixed] Tray controls don't respect the position of the Windows Taskbar.
-- [Fixed] Added optional 'Remove from disk' option to the song context menu
-- [Fixed] Date in the Song Information window is not localized
-- [Fixed] WASAPI Exclusive mode plays high pitched sound
-- [Fixed] Play next doesn't work correctly when shuffle is enabled
+    <releaseNotes>
+      
+      – [Changed] Updated the Chinese (Simplified) translation
+– [Changed] Updated the Korean translation
+– [Changed] Updated the Swedish translation
+– [Changed] Decreased the minimum window size for people using narrow or vertical monitors
+– [Changed] Before adding a collection folder, a check is now performed to ensure its content is accessible.
+– [Changed] Improved parsing of lyrics
+– [Fixed] We now don’t crash anymore when a collection folder’s content is not accessible.
+– [Fixed] Indexing stops when encountering an unreadable file or folder
+– [Fixed] Fixed another issue playing files which contain special characters
+– [Fixed] Fixed multiple crashes when searching for lyrics and when editing lyrics
+– [Fixed] Fixed a crash which occurs when indexing MP3 files which have corrupt headers
+– [Fixed] Fixed a small issue displaying lyrics download timeout settings
 
 </releaseNotes>
   </metadata>
