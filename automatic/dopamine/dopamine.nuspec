@@ -4,8 +4,8 @@
   <metadata>
     <id>dopamine</id>
     <version>1.5.14</version>
-    <packageSourceUrl>https://github.com/Shywim/chocolatey-packages/tree/master/automatic/dopamine</packageSourceUrl>
-    <owners>Shywim</owners>
+    <packageSourceUrl>https://github.com/kbalint/chocolatey-packages/tree/master/automatic/dopamine</packageSourceUrl>
+    <owners>kbalint</owners>
 
     <title>Dopamine (Install)</title>
     <authors>digimezzo</authors>
