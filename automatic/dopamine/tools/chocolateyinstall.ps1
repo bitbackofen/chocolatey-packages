@@ -3,8 +3,8 @@
 
 $packageName= 'dopamine'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://www.digimezzo.com/content/software/dopamine/Dopamine%201.5.14%20(Release).msi'
-$checksum = 'D205F03DEDEEF1FA2816696D1994987511EF177B0B29F255C2AE70F09BAD71A6'
+$url = 'https://www.digimezzo.com/content/software/dopamine/Dopamine%202.0%20(Release).msi'
+$checksum = '94B7B01D68312BCB38D9C000FE45846C689C5CC11D4BD31795E0E0922F0E4035'
 
 $packageArgs = @{
   packageName   = $packageName

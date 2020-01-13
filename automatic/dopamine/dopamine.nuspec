@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dopamine</id>
-    <version>1.5.14</version>
+    <version>2.0.0</version>
     <packageSourceUrl>https://github.com/kbalint/chocolatey-packages/tree/master/automatic/dopamine</packageSourceUrl>
     <owners>kbalint</owners>
 
@@ -23,19 +23,71 @@
 More information and downloads are available at [http://www.digimezzo.com](http://www.digimezzo.com)</description>
     <releaseNotes>
       
-      – [Changed] Updated the Chinese (Simplified) translation
-– [Changed] Updated the Korean translation
-– [Changed] Updated the Swedish translation
-– [Changed] Decreased the minimum window size for people using narrow or vertical monitors
-– [Changed] Before adding a collection folder, a check is now performed to ensure its content is accessible.
-– [Changed] Improved parsing of lyrics
-– [Fixed] We now don’t crash anymore when a collection folder’s content is not accessible.
-– [Fixed] Indexing stops when encountering an unreadable file or folder
-– [Fixed] Fixed another issue playing files which contain special characters
-– [Fixed] Fixed multiple crashes when searching for lyrics and when editing lyrics
-– [Fixed] Fixed a crash which occurs when indexing MP3 files which have corrupt headers
-– [Fixed] Fixed a small issue displaying lyrics download timeout settings
-
+[Added] Added a setting to remove songs from disk in the Now Playing context menu
+[Added] Added folder view
+[Added] Added smart playlists
+[Added] It is now possible to sort songs by album, even when no album is selected.
+[Added] The search field can now be activated by pressing CTRL+F
+[Added] Added sort by "date added" and "date created" in the song screen
+[Added] It is now possible to drop files on now playing, when no songs are playing.
+[Added] It is now possible to drop folders on the playlists screen
+[Added] Added rating and love to the bottom left now playing pane on the main screen
+[Fixed] Added an extra button to access Now Playing
+[Added] Added a Japanese translation
+[Added] Added a Norwegian translation
+[Changed] Changed the overall design
+[Changed] Removed song covers in playlists. Loading images in memory causes a huge memory footprint for large playlists.
+[Changed] Tweaked the now playing screen
+[Changed] Removed the "Frequent" page
+[Changed] Updated the Bulgarian translation
+[Changed] Updated the Chinese (Simplified) translation
+[Changed] Updated the Chinese (Traditional) translation
+[Changed] Updated the Croatian translation
+[Changed] Updated the German translation
+[Changed] Updated the Greek translation
+[Changed] Updated the Hungarian translation
+[Changed] Updated the Italian translation
+[Changed] Updated the Japanese translation
+[Changed] Updated the Korean translation
+[Changed] Updated the Polish translation
+[Changed] Updated the Portuguese (Portugal) translation
+[Changed] Updated the Russian translation
+[Changed] Updated the Spanish translation
+[Changed] Updated the Swedish translation
+[Changed] Updated the Ukrainian translation
+[Changed] Updated the Vietnamese translation
+[Fixed] Multiple memory leaks
+[Fixed] Lyrics scrolling doesn't work correctly for lyrics which have no timestamps
+[Fixed] It is impossible to fetch lyrics from LyricWikia when song artist or title have special casing and special characters
+[Fixed] The spectrum analyzer causes crashes
+[Fixed] Artists or genres which are identical, but use a different casing, are shown as multiple artists or genres.
+[Fixed] Enabling the system notification on Windows 10 N causes a crash
+[Fixed] Rating songs makes the UI non-responsive
+[Fixed] Songs which are enqueued from Explorer, are enqueued in the wrong order.
+[Fixed] It is impossible to delete songs from playlists, for which the song files have been removed from or renamed on disk.
+[Fixed] Pressing multimedia keys causes glitches when the spectrum analyzer is enabled
+[Fixed] System notifications causes a crash when playing a song which has a malformed track number
+[Fixed] Artists and Genres screens don't show songs for the Cyrillic alphabet
+[Fixed] Artists info pane displays white stars instead of actual artist pictures
+[Fixed] Lyrics "Search again" does not work
+[Fixed] Lowered CPU and memory usage
+[Fixed] Short sound after starting up
+[Fixed] Zero-sized images which are embedded in audio files, are mistakenly treated as valid images.
+[Fixed] Queued songs which are not in the collection (e.g. from playlists), are not resumed after a restart.
+[Fixed] Playlists containing the same song multiple times, confuses play previous and play next.
+[Fixed] Incorrect ordering of timed lyrics which contain duplicate timestamps
+[Fixed] Tray icon is not visible when using light system theme in Windows 10
+[Fixed] It is not possible to type + and - in the last.fm password box
+[Fixed] Removing all songs from Now Playing causes a crash
+[Fixed] Discs are ordered wrong when an album has more than 10 discs
+[Fixed] Pressing the keyboard left arrow doesn't jump a song back to the beginning when it has been playing for less than 15 seconds
+[Fixed] Lyrics are not saved to the audio files
+[Fixed] Lyrics are not displayed the 1st time the lyrics page is shown
+[Fixed] File size information in the songs lists is rounded down
+[Fixed] It is not possible to add songs to playlists from the Now Playing screen
+[Fixed] Playback order is not reset when song order is changed on the songs list and songs are enqueued again
+[Fixed] Multimedia play and pause keys are not always working
+[Fixed] External control server fails to retrieve the current track
 </releaseNotes>
   </metadata>
   <files>
